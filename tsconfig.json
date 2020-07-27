@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "module": "commonjs",
+    "removeComments": true,
+    "target": "es5",
+    "jsx": "react",
+    "allowJs": true,
+    "esModuleInterop": true,
+    "strictNullChecks": true,
+    "allowSyntheticDefaultImports": true,
+    "noImplicitThis": true,
+    "lib": [
+      "dom",
+      "es5",
+      "es6",
+      "es7"
+    ]
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
