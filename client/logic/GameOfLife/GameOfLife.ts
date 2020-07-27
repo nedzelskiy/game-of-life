@@ -70,26 +70,6 @@ export default class GameOfLife {
     return newGameField;
   }
 
-  // createTestField(fieldSize: number): CellType[][] {
-  //   const gameFiled: CellType[][] = [];
-  //   for (let y = 0; y < fieldSize; y++) {
-  //     gameFiled[y] = [];
-  //     for (let x = 0; x < fieldSize; x++) {
-  //       if (
-  //         (y === 1 && x === 2) ||
-  //         (y === 2 && x === 0) ||
-  //         (y === 2 && x === 2) ||
-  //         (y === 3 && (x ===1 || x===2))
-  //       ) {
-  //         gameFiled[y][x] = CellType.LIVE;
-  //       } else {
-  //         gameFiled[y][x] = CellType.DEAD;
-  //       }
-  //     }
-  //   }
-  //   return gameFiled;
-  // }
-
   runGame(callbackOnTickFinish: CallbackFunction, fieldSize: number = 50, tickInterval: number = 1000) {
     let gameField = GameOfLife.createField(fieldSize);
     setInterval(() => {
